@@ -7,7 +7,7 @@ import plotly.graph_objs as go
 
 
 yelpurl = 'https://api.yelp.com/v3/businesses/search'
-header_yelp = {'authorization':'Bearer '+api_key}
+header_yelp = {'authorization':'Bearer '+ yelp_key}
 CACHE_FNAME = 'cache_yelp.json'
 
 CACHE_FNAME2 = 'cache_zomato.json'
