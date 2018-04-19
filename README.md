@@ -10,19 +10,16 @@ Required files to run the program:
 - secrets.py (Place your API keys in this file saved as: yelp_key = <api_key from Yelp>, zomato_key = <api_key from Zomato>). See next section on instructions on how to get API keys.
   
 Data sources and api_key requirements:
-- Yelp
-An API key is required to access this data source. To get an API key, go to https://www.yelp.com/developers/documentation/v3/authentication
+- Yelp (An API key is required to access this data source. To get an API key, go to https://www.yelp.com/developers/documentation/v3/authentication)
 
-- Zomato
-An API key is required to access this data source. To get an API key, go to https://developers.zomato.com/api
+- Zomato (An API key is required to access this data source. To get an API key, go to https://developers.zomato.com/api)
 
 Other useful info:
 Getting started with Plotly for Python - https://plot.ly/python/getting-started/
   
 Program structure:
-This program uses API key authorization, json, requests, caching, sqlite, and plotly.
+This program uses API key authorization, json, requests, caching, sqlite, and plotly.It is divided into 8 main functions:
 
-It is divided into 8 main functions:
 1. ask_user: Main function. Interactively asks the user for a city input. This function kicks off the other functions.
 2. create_db_tables: Creates the db and main tables YelpResto and ZomatoResto.
 3. insert_tables: Inserts data in the YelpResto and ZomatoResto tables.
