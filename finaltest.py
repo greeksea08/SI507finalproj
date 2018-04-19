@@ -25,14 +25,11 @@ class TestDatabase(unittest.TestCase):
         result_list = results.fetchall()
         self.assertEqual(result_list[0][1], 'Pizza', 'testing category is Pizza')
 
-        sql = '''
-            SELECT Name, CategoryName
-            FROM YelpResto
-            WHERE Name = "Jose's Tacos"
-        '''
+        sql = 'SELECT * FROM YelpResto'
+        
         results = cur.execute(sql)
         result_list = results.fetchall()
-        self.assertEqual(result_list[0][1], 'Tacos', 'testing category is Tacos')
+        self.assertEqual(len(result_list[0]), 5, 'testing record is a 5-value tuple')
 
         conn.close()
 
@@ -63,6 +60,12 @@ class TestDatabase(unittest.TestCase):
         results = cur.execute(sql)
         result_list = results.fetchall()
         self.assertEqual(result_list[0][1], 'Breakfast', 'testing category is Breakfast')
+
+        sql = 'SELECT * FROM ZomatoResto'
+        
+        results = cur.execute(sql)
+        result_list = results.fetchall()
+        self.assertEqual(len(result_list[0]), 5, 'testing record is a 5-value tuple')
 
         conn.close()
 
