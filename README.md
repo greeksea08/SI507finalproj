@@ -7,21 +7,13 @@ This program lets a user view the average, minimum, and maximum ratings of diffe
 
 Required files to run the program:
 - help.txt
-- secrets.py
-
-Place your API keys in this file saved as:
-    yelp_key = <api_key from Yelp>
-    zomato_key = <api_key from Zomato>
-
-See next section on instructions on how to get API keys.
+- secrets.py (Place your API keys in this file saved as: yelp_key = <api_key from Yelp>, zomato_key = <api_key from Zomato>). See next section on instructions on how to get API keys.
   
 Data sources and api_key requirements:
 - Yelp
-
 An API key is required to access this data source. To get an API key, go to https://www.yelp.com/developers/documentation/v3/authentication
 
 - Zomato
-
 An API key is required to access this data source. To get an API key, go to https://developers.zomato.com/api
 
 Other useful info:
